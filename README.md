@@ -12,8 +12,11 @@ Projects
 
   1. [Safer Stoves](#safer-stoves)
   2. [Equalizer](#design-simulation-implementation-of-an-8-band-equalizer)
-  3. [Audio Power Amplifier](#power-amp)
-
+  3. [Audio Power Amplifier](#simulation-and-implementation-of-audio-power-amplifier)
+  4. [8-bit Data Latch Memory Module](#8-bit-data-latch-memory-module)
+  5. [Instruction Set Simulator](#instruction-set-simulator)
+ 
+---
 ### Safer Stoves
 
 
@@ -28,8 +31,17 @@ Safer Stoves made it to the top 10 of all the sophmore engineers!
 
 ### Design, Simulation, Implementation of an 8-Band Equalizer
 
+Junior year in my Electronics Class, the students were all tasked of creating an equalizer of at least 4-bands that would span the human hearing frequency range (20Hz to 20kHz).  
+
+My partner and I decided to design an 8-band equalizer using second order bandpass filters.  This meant that overall their would be less components per band and it would allow for easier implementation. (As well as being cheaper!)
+
+The equalizer was designed using OrCAD PSpice and simulated using Allegro  Simulator.  Everything was made sure to be working properly and then all components were assembled onto a breadboard!
+
 ### Simulation and Implementation of Audio Power Amplifier
 
+### 8-bit Data Latch Memory Module
+
+### Instruction Set Simulator
 
 ```markdown
 Syntax highlighted code block
