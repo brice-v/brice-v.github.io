@@ -4,7 +4,7 @@ __Instruction Set__
 _By Brice Vadnais and Aristotle Nafpliotis
 ---
 
-#### __Inherent Instructions__
+### __Inherent Instructions__
 ___```nop``` - No Operation___
   * Format: ```nop``` - Stalls the Processor for one clock cycle
 
@@ -43,7 +43,7 @@ ___```jmp_neq``` - Jump when Zero Flag is low (Implying Accumulators are equal)_
 
 ---
 
-#### __Immediate Instructions__
+### __Immediate Instructions__
 ___```lda_imm``` - Load Accumulator A with immediate 8-bit value___
   * Format: ```lda 0xXX``` - Loads A with 8 bit hex value 0xXX
 
@@ -73,7 +73,7 @@ ___```jmp_imm``` - Jump to Immediate 8-bit value___
 
 ---
 
-#### __Direct/Extended (Memory) Instructions__ 
+### __Direct/Extended (Memory) Instructions__ 
 ___```lda_dir``` - Load Accumulator A with memory value___
   * Format: ```lda [0xXX]``` or ```lda [REF]``` - Loads the A Accumulator with the 8-bit hex value located at [0xXX] or [REF]
 
@@ -115,7 +115,7 @@ ___```jmp_dir``` - Jump to point in memory___
 
 ---
 
-#### __Stack Instructions__
+### __Stack Instructions__
 ___```push_a``` - Push Accumulator A into Stack___
   * Format: ```psha``` -  Load Accumulator A 8-bit hex value into stack
   * Pre decrement - Stack Pointer is decreased by 1 before operation
@@ -146,7 +146,7 @@ ___```push_indx``` - Push the Indexed value in memory to Stack___
 
 ---
 
-#### __Indexed Instructions__
+### __Indexed Instructions__
 ___```lda_indx``` - Load Accumulator A with Indexed value in memory___
   * Format: ```lda [y + X]``` - Load the value located at y plus the value of indexed accumulator X into Accumulator A
 
