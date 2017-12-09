@@ -7,8 +7,8 @@ Feel free to look around!
 
  -Brice 
 
-[Comment]: <TODO - Put another page for products - List more about me ie. interests, things i do, music - link to resume (as pdf) - possibly activities - maybe page for capstone and reasons for decisions>
-Projects
+## Projects
+
 ---
 
   1. [Safer Stoves](#safer-stoves)
