@@ -1,12 +1,35 @@
-## Welcome to GitHub Pages
+## About
 
-You can use the [editor on GitHub](https://github.com/brice-v/brice-v.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Hey! My name's Brice, I'm a senior undergraduate studying Computer Engineering at the [University of Hartford](https://hartford.edu). Below is a list of a bunch of things i've done.
+Feel free to look around!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ Thanks!
 
-### Markdown
+ -Brice 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Projects
+---
+
+  1. [Safer Stoves](#safer-stoves)
+  2. [Equalizer](#design-simulation-implementation-of-an-8-band-equalizer)
+  3. [Audio Power Amplifier](#power-amp)
+
+### Safer Stoves
+
+
+In my sophmore year of school, a group project tasked the students with building a device that would benefit the safety of an eldery population.
+
+My group and I decided to make a device that would take the worry out of potentially having a kitchen fire. And so Safer Stoves was born!
+This little device was made using an Arduino, as the brains, and a motion sensor combined with a gas valve / relay for the sensors.
+
+The device had a display that could set the timer to the length of the cooking, and if the user was innatentive to their food, it would shut off the stove.
+
+Safer Stoves made it to the top 10 of all the sophmore engineers!
+
+### Design, Simulation, Implementation of an 8-Band Equalizer
+
+### Simulation and Implementation of Audio Power Amplifier
+
 
 ```markdown
 Syntax highlighted code block
