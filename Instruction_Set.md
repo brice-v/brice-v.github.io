@@ -1,7 +1,7 @@
 __Instruction Set__ 
 ===
 >_Accumulator based 8-bit Processor_
-_By Brice Vadnais and Aristotle Nafpliotis_
+_By Brice Vadnais and Aristotle Nafpliotis
 ---
 
 #### Inherent Instructions
