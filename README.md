@@ -7,6 +7,7 @@ Feel free to look around!
 
  -Brice 
 
+[Comment]: <TODO - Put another page for products - List more about me ie. interests, things i do, music - link to resume (as pdf) - possibly activities - maybe page for capstone and reasons for decisions>
 Projects
 ---
 
@@ -18,7 +19,6 @@ Projects
  
 ---
 ### Safer Stoves
-
 
 In my sophmore year of school, a group project tasked the students with building a device that would benefit the safety of an eldery population.
 
@@ -38,6 +38,12 @@ My partner and I decided to design an 8-band equalizer using second order bandpa
 The equalizer was designed using OrCAD PSpice and simulated using Allegro  Simulator.  Everything was made sure to be working properly and then all components were assembled onto a breadboard!
 
 ### Simulation and Implementation of Audio Power Amplifier
+
+Sophmore year in my Electronic Circuit Analysis class, we were told to simulate and construct a given audio power amplifier circuit.  
+
+The design was constructed within OrCAD PSpice and simulated using Allegro Simulator. We were all asked to find the crucial values that distinguish a good Audio Power Amplifier from a bad one such as it's frequency response, the distortion at different levels, and the power gain.
+
+Then the circuit was constructed on a breadboard and tested thoroughly to ensure that it was working and amplifying the signal.  We learned alot about how to handle heat that day!
 
 ### 8-bit Data Latch Memory Module
 
