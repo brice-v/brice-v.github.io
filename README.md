@@ -9,7 +9,7 @@ Feel free to look around!
 
 Stuff on the Site
 ---
-  - [Resume (PDF)](https://brice-v.github.io/docs/BriceVadnaisResume4.pdf)
+  - [Resume (PDF)](https://brice-v.github.io/docs/BriceVadnaisResume.pdf)
   - [Projects](https://brice-v.github.io/projects)
   - [My Instruction Set Simulator Documentation](https://brice-v.github.io/Instruction_Set)
   - More Coming Soon...
