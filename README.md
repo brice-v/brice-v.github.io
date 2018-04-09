@@ -12,7 +12,8 @@ Stuff on the Site
   - [Resume (PDF)](https://brice-v.github.io/docs/BriceVadnaisResume.pdf)
   - [Projects](https://brice-v.github.io/projects)
   - [My Instruction Set Simulator Documentation](https://brice-v.github.io/Instruction_Set)
-  - More Coming Soon...
+  - 8-bit Microprocessor with 16-bit Data Path (For the microcontroller... coming soon) 
+  - 8-bit FPGA Microcontroller (Senior Capstone project... coming soon)
 
 
 
