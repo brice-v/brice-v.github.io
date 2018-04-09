@@ -50,7 +50,7 @@ Finally when the board was delivered all of the components were soldered onto th
 
 With everything working the project was deemed a success.
 
-[Link to my paper (PDF)](https://brice-v.github.io/docs/)
+[Link to my paper (PDF)](https://brice-v.github.io/docs/8bitdlatch_bv.pdf)
 
 ### Instruction Set Simulator
 
