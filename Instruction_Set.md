@@ -1,9 +1,9 @@
 __Instruction Set__ 
 ===
 >_Accumulator based 8-bit Processor_
-_By Brice Vadnais and Aristotle Nafpliotis_
+_By Brice Vadnais_
 ---
-
+# TO BE UPDATED
 ### __Inherent Instructions__
 ___```nop``` - No Operation___
   * Format: ```nop``` - Stalls the Processor for one clock cycle
