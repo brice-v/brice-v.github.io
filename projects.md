@@ -62,7 +62,7 @@ The entire ISS was written in Python 3.  This was mostly due to the ease of use 
 
 This proved to be very successful and also allowed me to design the assembly syntax that would be used for the processor.  The code itself is currently now being used to convert the assembly language into machine readable code for the microprocessor that was built.
 
-(Link to project on Github coming soon)
+[Link to project](https://github.com/brice-v/InstructionSetSimulator)
 
 ### Web App with PSEG
 
