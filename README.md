@@ -12,12 +12,12 @@ Stuff
   - [Resume (PDF)](https://brice-v.github.io/docs/BriceVadnaisResume.pdf)
   - [Projects](https://brice-v.github.io/projects)
   - Assembly (custom)
-  ..* [My Instruction Set Simulator Documentation](https://brice-v.github.io/Instruction_Set)
+    * [My Instruction Set Simulator Documentation](https://brice-v.github.io/Instruction_Set)
   - VHDL
-  ..* [8-bit Microprocessor with 16-bit Data Path](https://github.com/brice-v/8-bit-Custom-Processor) 
+    * [8-bit Microprocessor with 16-bit Data Path](https://github.com/brice-v/8-bit-Custom-Processor) 
   - Python (3)
-  ..* [Microprocessor Virtual Machine/Instruction Set Simulator](https://github.com/brice-v/InstructionSetSimulator-VM)
-  ..* [Microprocessor Assembler](https://github.com/brice-v/Assembler)
+    * [Microprocessor Virtual Machine/Instruction Set Simulator](https://github.com/brice-v/InstructionSetSimulator-VM)
+    * [Microprocessor Assembler](https://github.com/brice-v/Assembler)
 
 
 
