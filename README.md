@@ -36,7 +36,9 @@ Recently I read _Artemis_ by Andy Weir and _Elon Musk: Tesla, SpaceX, and the Qu
 I Highly recommend both to anyone interested.
 
 ## Achievements
-
+ 
+  - Magna Cum Laude from University of Hartford
+    - Computer Engineering B.S. w/ Computer Science Minor
   - Achieved a Black Belt in American Kenpo Karate after 9 years of study
   - Dean's List: Fall and Spring of 2014, 2015, and 2016 and Spring of 2017
   - President's List: Fall of 2014, 2015 and Spring of 2016
