@@ -27,7 +27,7 @@ Music is my first and foremost passion.  I play guitar and listen to music every
 
 I love to tinker and play with computers, especially single board computers. Recently i've gotten a Raspberry Pi and the possibilites of things that can be done with it are endless.  In addition to that though I've built a plethora of computers and I like to be up to date with the next best thing.  I really like linux and open source software.  My personal favorite distro is Ubuntu for the ease of use.
 
-I'm very interested in microprocessor architecture and decided for my capstone that I would build my own.  I hope to learn alot about the core foundations to processor design.  Heres a [link to a instruction set simulator](https://brice-v.github.io/projects#instruction-set-simulator) I built for it!
+I'm very interested in microprocessor architecture and decided for my capstone in college that I would build my own.  I learned alot about the core foundations of processor design.  Heres a [link to a instruction set simulator](https://brice-v.github.io/projects#instruction-set-simulator) I built for it!  More recently however I've been looking into the architecture of more complex CPUs such as x86/OpenSparc and more.  The architecture I like the most right now though, is RISC-V because of its open implementation and easy extensibility.  I think this is where the future should head for processor design.
 
 I also like to code! Python has by far become my favorite language becuase of its versatility but I've also coded in Java, Matlab, C/C++, SQL, and Adobe Coldfusion.
 
