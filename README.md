@@ -1,19 +1,20 @@
 ## Hello World!
 
-Hey! My name's Brice, I'm a senior undergraduate studying Computer Engineering at the [University of Hartford](https://hartford.edu). Below is a list of a bunch of things i've done.
+Hey! My name's Brice, I'm a Computer Engineer and I love all things computer and technology related. Below is a list of a bunch of things i've done.
 Feel free to look around!
 
  Thanks!
 
  -Brice 
 
-Stuff on the Site
+Stuff
 ---
   - [Resume (PDF)](https://brice-v.github.io/docs/BriceVadnaisResume.pdf)
   - [Projects](https://brice-v.github.io/projects)
   - [My Instruction Set Simulator Documentation](https://brice-v.github.io/Instruction_Set)
-  - 8-bit Microprocessor with 16-bit Data Path (For the microcontroller... coming soon) 
-  - 8-bit FPGA Microcontroller (Senior Capstone project... coming soon)
+  - [8-bit Microprocessor with 16-bit Data Path] (https://github.com/brice-v/8-bit-Custom-Processor) 
+  - [Microprocessor Virtual Machine/Instruction Set Simulator] (https://github.com/brice-v/InstructionSetSimulator-VM)
+  - [Microprocessor Assembler](https://github.com/brice-v/Assembler)
 
 
 
@@ -25,9 +26,11 @@ I love to tinker and play with computers, especially single board computers. Rec
 
 I'm very interested in microprocessor architecture and decided for my capstone that I would build my own.  I hope to learn alot about the core foundations to processor design.  Heres a [link to a instruction set simulator](https://brice-v.github.io/projects#instruction-set-simulator) I built for it!
 
-I also like to code! Python has by far become my favorite language becuase of its versatility but I've also coded in Java, Matlab, C++, SQL, and Adobe Coldfusion.
+I also like to code! Python has by far become my favorite language becuase of its versatility but I've also coded in Java, Matlab, C/C++, SQL, and Adobe Coldfusion.
 
-Then of course is watching videos, reading books, and playing video games.  
+Then of course is watching videos, reading books, and playing video games.
+Recently I read _Artemis_ by Andy Weir and _Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future_ by Ashlee Vance.
+I Highly recommend both to anyone interested.
 
 ## Achievements
 
