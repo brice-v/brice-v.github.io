@@ -1,0 +1,103 @@
+fun main() {
+    # Single Line Comment
+    ###
+        Block Comment
+    ###
+    
+    var # Mutable variable assignment
+    var x = 1
+    x = 4 # Works
+    
+    val # Immutable variable assignment
+    val y = 19
+    y = 1 # Compiler Error - Cannot Reassign Immutable variable
+    
+    # Use Type inference when assiging variables
+    
+    # Can also use type annotations (potentially for better performance)
+    ### Types
+        int, i8, i16, i32, i64
+        uint, u8, u16, u32, u64
+        str
+        struct # Which is just an object
+        enum
+        list/slice
+        dict/hashmap
+        fn/fun # depending on what we name it
+        channel # chrecv/chsend ; receiving channel, sending channel # maybe use the <- syntax
+        any # the any type which just encapsulates everything (essentially an empty interface)
+    ###
+
+    ### Operators
+        +
+        -
+        *
+        /
+        & # bitwise and
+        | # bitwise or
+        ~ # bitwise not
+        //
+        **
+        >>
+        <<
+        && also written as `and`
+        || also written as `or`
+        ! also written as `not`
+    ### TODO Have way to give raw strings a meaning
+
+    ### Assigment Operators
+        +=
+        -=
+        /=
+        //=
+        *=
+        **=
+    ###
+
+    fun test(x : int, y : int) : int { return x + y }() # Call a function inline
+    val mytest = fun(x : int, y : int) : int { return x + y } # Assinging variable to function
+    mytest(1,4) # Calling above function
+
+    # First class functions
+
+    val xa = mytest(1,4) + fun() : int { 1214 + 802520 * 248}
+
+    # Var args
+    fun some(args : ...int) {
+        for i in args {
+            println(i) # This will always give the item
+        }
+        for i, v in args {
+            # This syntax allows you to get the value and the item index
+            println(i, v)
+        }
+    }
+
+}
+
+
+
+### Other notes
+
+    - No semicolons needed
+    - Builtin doc generator
+    - builtin package manager (done the same way as something like rust with semver)
+    - good size std lib like the python one (possibly with gui - maybe something simple or use like fyne)
+    - can run funtions at top level
+    - scripting should be easy and intuitive
+    - just going to use channels and go routines
+    - have a set of good math/crypto by using go's
+    - have a good set of collections # b trees, rb trees, queues etc...
+    - `in` keyword like python allows iteration over a list/slice/range/etc...
+    - maybe include some go libs to provide extra cool functionality
+    - test blocks for easy testing in a file or as a seperate file
+    - Importing is like it is in go but NOTE: need to fix the gopath stuff to make it trivial
+        - Or im gonna make it like it is in zig/js const myns = import("path/here")
+        -                                         maybe const _ = import("path") will make the names top level
+        -                                 or somethign like const __main__ = ... because thats like the top level 
+    - maybe make regex top level like it is in ruby/js `/[0-9]abc\w+/`
+    - raw strings like in go with ` backtick
+    - using go gc and their scheduler
+    - will need some formatter builtin (like gofmt or black)
+
+###
