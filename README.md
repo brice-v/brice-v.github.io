@@ -43,3 +43,7 @@ I Highly recommend both to anyone interested.
   - Dean's List: Fall and Spring of 2014, 2015, and 2016 and Spring of 2017
   - President's List: Fall of 2014, 2015 and Spring of 2016
   - All County Jazz Band: Auditioned and played trumpet for 5 years with the Jazz Band
+
+### Links
+
+[Python Cheat Sheet by gto76](/pychtsht)
