@@ -66,6 +66,7 @@ fun main() {
     fun some(args : ...int) {
         for i in args {
             println(i) # This will always give the item
+            # if its a slice/list of ints its always the 
         }
         for i, v in args {
             # This syntax allows you to get the value and the item index
@@ -87,6 +88,14 @@ fun main() {
     - scripting should be easy and intuitive
     - just going to use channels and go routines
     - have a set of good math/crypto by using go's
+        - as well as all the other good parts
+        - archiving/compression
+        - sqlite builtin or maybe some other db
+        - dealing with csv builtin
+        - io, files, sockets, etc...
+        - os layer thats similar to posix and shell scripting
+        - good datetime layer like pythons
+        - argparser, flagparser, interacting with env vars
     - have a good set of collections # b trees, rb trees, queues etc...
     - `in` keyword like python allows iteration over a list/slice/range/etc...
     - maybe include some go libs to provide extra cool functionality
@@ -99,5 +108,14 @@ fun main() {
     - raw strings like in go with ` backtick
     - using go gc and their scheduler
     - will need some formatter builtin (like gofmt or black)
+    - string interpolation in any string
+    - some sort of debugger builtin possibly
+    - maybe have shortcut in order to execute shell commands (but still in go)
+    - maybe console ui package
+    - builtin generics probably - this will just generate code for every type but if it can determine at compile time who calls then it can just generate the necessary
+    - json decoding and other configuration parsing stuff
+    - all str stuff would act like pythons
+    - requests like pacakge builtin that allows you to download something easy ( this would be apart of the package manager)
+
 
 ###
