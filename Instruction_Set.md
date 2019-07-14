@@ -167,3 +167,7 @@ ___```dec_indx``` - Decrement Value at Indexed value in memory___
 
 ___```jmp_indx``` - Jump to value at Indexed value in memory___
   * Format: ```jmp [y + X]``` - Jump to value at y plus the value of indexed Accumulator X
+
+
+
+Note: It is possible that some of this has changed and it has been over a year since this was last looked at. It could be wrong.
