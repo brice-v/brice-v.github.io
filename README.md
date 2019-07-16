@@ -15,6 +15,7 @@ Stuff
     * [My Instruction Set Simulator Documentation](https://brice-v.github.io/Instruction_Set)
   - VHDL
     * [8-bit Microprocessor with 16-bit Data Path](https://github.com/brice-v/8-bit-Custom-Processor) 
+    * [Final Paper](https://brice-v.github.io/docs/final_paper.pdf)
   - Python (3)
     * [Microprocessor Virtual Machine/Instruction Set Simulator](https://github.com/brice-v/InstructionSetSimulator-VM)
     * [Microprocessor Assembler](https://github.com/brice-v/Assembler)
