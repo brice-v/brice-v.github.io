@@ -19,13 +19,16 @@ fun main() {
         int, i8, i16, i32, i64
         uint, u8, u16, u32, u64
         str
-        struct # Which is just an object
+        struct # Which is just an object maybe use `obj`
         enum
         list/slice
-        dict/hashmap
+        dict/hashmap # typing would be like dict[str]int
         fn/fun # depending on what we name it
         channel # chrecv/chsend ; receiving channel, sending channel # maybe use the <- syntax
         any # the any type which just encapsulates everything (essentially an empty interface)
+        bool
+        char
+        rune
     ###
 
     ### Operators
@@ -117,5 +120,80 @@ fun main() {
     - all str stuff would act like pythons
     - requests like pacakge builtin that allows you to download something easy ( this would be apart of the package manager)
 
+    - add warnings for other common coding languages to help transistion
+        - like if someone types elif or elsif or elseif - tell them to try `else if`
+
+    - pattern matching would be cool to add (a more powerful switch where you can match on a struct/objects fields and stuff)
+    - maybe optionals
+    - union types would also be cool
+
+    - var and val can both be used at top level and will then represent a global var
+
+    - ranges would be cool like 1..13, 1.., 13..1, etc....
+    - using go should be easy
+
+    - debug printing that works like ic
+
+    - some way to generate obj fields like js.  x.name = "John"  ==== (x = { :name, "John" })
+
+    - question mark to propogate err (if err != nil) and using match we can handle it like rust
+
+    - implicit return from functions as last line - only if annotated with return value? 
+        - have to figure this out more
+        - From Astro: A semi-colon at the end of a block, prevents the block from returning its last value
+    
+    - Use everything as an expression, for expression, function expression, if expression, etc...
+###
+
+### Following Examples Led by Astro Lang
+
+    - Want Comprehensions and high level set operations
+    - Set Comp =>       (x for x in z)
+    - Dict Comp =>      {x: y for x, y in zz}
+    - List Comp =>      [x for x in z]
+    - Lambdas =>        |x,y| => x**2 + y**2
+    - Regex Literal =>  /[0-9]{1,}/
+    - Object Literal => var x = obj {name: "hello", age: 24}
+    - Range Literal =>  1..10 (1 to 10 inclusive so this would could 1,2,3,4,5,6,7,8,9,10)
+    - Hex, Octal, Binary
+    Literals =>         0x, 0o, 0b
+    - Underscore for number separation 1_000_000
+    - allow use of symbols in identifiers possibly
+    - Maybe slices can be done with ranges but the python way probably makes more sense when you add in step
+    - symbols/atoms? => :name = "b" 
+    - Example of what astro does that i was thinking of
+            // A dictionary whose keys are symbols and key-value pairs specified at initialization are optimized
+            var object = { name: "James", age: 6 }
+    - Sets, Dicts, and Lists can all be Mutable or Immutable thanks to var and val
+    - with sets i want to support | for union, & for intersection, - for difference, ^ for symmetric difference (everything 2 sets dont have in common)
+    - also with sets the comparison operators should check for subset between two sets using set1 < set2, set1 > set2, etc...
+    - check if something is in a set, dict, list with `in` keyword
+    - String formatting and interpolation can be done on any string
+        - things like padding, spaces, etc
+        - ${} seems to be the most common way but i like the way #{} looks and we use a lot of # signs
+        - characters should be able to be escaped using backslash
+        - maybe raw strings will use backticks like in go
+    - breaking lines shouldnt matter in the language
+
+    - and, or, not should all work alongside && || !
+    - if, elif, else should work
+        - elsif should return compiler warning
+        - else if possibly should work due to everything being an expression but this should warn too
+    
+    - only one loop - for loop 
+    - Proper pattern matching with struct/objects/sets etc...
+        - This means things need to be able to destructure properly
+    
+    - Top level main should not be needed but can be used as an entry point otherwise
+        a different top level statement will be used as the root node
+    - Default parameters in function should be allowed
+    - maybe include union types 
+    - Immediately invoked functions will be possible with closures and anon funcs
+    - Might need yield and next to do iterators? not sure yet
+    - Try to include macros like the one in the monkey language
+    - Allow casting of types and possibly types can be first class
+    - Do what go does with typing to make methods work
+    - Figure out how we want fields to be with visibility (should they just use the pub keyword to make them visible?)
 
 ###
+# I just want a good scripting language for me that compiles to native code on many platforms 
