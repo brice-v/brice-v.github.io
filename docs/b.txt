@@ -155,6 +155,7 @@ fun main() {
     - Regex Literal =>  /[0-9]{1,}/
     - Object Literal => var x = obj {name: "hello", age: 24}
     - Range Literal =>  1..10 (1 to 10 inclusive so this would could 1,2,3,4,5,6,7,8,9,10)
+        - 1..<10 for noninclusive (1 to 10 noninclusive would be 1,2,3,4,5,6,7,8,9)
     - Hex, Octal, Binary
     Literals =>         0x, 0o, 0b
     - Underscore for number separation 1_000_000
