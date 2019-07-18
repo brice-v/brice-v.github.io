@@ -197,4 +197,20 @@ fun main() {
     - Figure out how we want fields to be with visibility (should they just use the pub keyword to make them visible?)
 
 ###
+### Some Kotlin Examples
+
+when (x) {
+    in 1..10 -> print("x is in the range")
+    in validNumbers -> print("x is valid")
+    !in 10..20 -> print("x is outside the range")
+    else -> print("none of the above")
+}
+# Going to use else for default case
+# Want to support is_str, is_num or just `is` in general
+# Use `match` instead of when and allow proper pattern matching - maybe start it off as a basic switch case thing
+    # Determine the `->` syntax maybe this is best or `:` ?
+
+
+
+###
 # I just want a good scripting language for me that compiles to native code on many platforms 
