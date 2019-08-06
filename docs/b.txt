@@ -19,7 +19,7 @@ fun main() {
         int, i8, i16, i32, i64
         uint, u8, u16, u32, u64
         str
-        struct # Which is just an object maybe use `obj`
+        struct # Which is just an object maybe use `obj` -> maybe this should be renamed
         enum
         list/slice
         dict/hashmap # typing would be like dict[str]int
@@ -39,13 +39,20 @@ fun main() {
         & # bitwise and
         | # bitwise or
         ~ # bitwise not
-        //
+        ^ # bitwise xor (or when used with sets, symmetric difference)
+        // # Floor division (no remainder)
         **
         >>
         <<
         && also written as `and`
         || also written as `or`
         ! also written as `not`
+        % # modulo
+        == # check return true if left == right
+        >=
+        <=
+        >
+        <
     ### TODO Have way to give raw strings a meaning
 
     ### Assigment Operators
@@ -55,6 +62,13 @@ fun main() {
         //=
         *=
         **=
+        &=
+        |=
+        ~=
+        >>=
+        <<=
+        %=
+        # Logical operators wont have assignment combo operators
     ###
 
     fun test(x : int, y : int) : int { return x + y }() # Call a function inline
@@ -143,6 +157,31 @@ fun main() {
         - From Astro: A semi-colon at the end of a block, prevents the block from returning its last value
     
     - Use everything as an expression, for expression, function expression, if expression, etc...
+
+    - Becuase of the backend in go, interfaces are satisfied my just implementing them
+    - the syntax might just end up being
+        interface Stringer {
+            to_string() str
+        }
+        # Can declare types that are just objects
+        type mytype obj {
+            name: str,
+            age: int,
+        }
+        # Instead of putting the values in, you put in the types
+        # To implement simply satisfy the function
+        fun (o: mytype) to_str() : str {           # NOTE - do we want to use a : or -> when denoting return types?
+            "#{=o.name}, #{=o.age}"
+        } # When we use this =variable syntax within string interpolation we can make that do debug printing similar to ic (from icecream)
+        # Also this may not be a great example becuase we may not necessarily want to define a to_str method, but i digress
+        - to use this it would look like
+
+        val abc : mytype = {name: "Brice", age: 22}
+        println(abc.to_str())
+        ## `abc.name: "Brice", abc.age: 22`
+    - More things can be explored this was just an initial foray into it
+    - Similar to something in go, i might just use that go syntax explicitly
+    - havent gone too much in to the deep end but it can be evaluated later becuase it still needs to work with everything
 ###
 
 ### Following Examples Led by Astro Lang
@@ -205,10 +244,25 @@ when (x) {
     !in 10..20 -> print("x is outside the range")
     else -> print("none of the above")
 }
+match x {
+    1..10 => print("x is in the range"),
+    validNumbers => print("x is valid"), # assuming validNumbers is some type of range
+    not 10..20 => print("x is outside of the range"),
+    {name: "brice", age: 22} => {
+        # In this case the x is matched against an object with 2 named fields with values
+        print("My name is #{x.name}")
+        # Side note - are objects just hashmaps?
+    },
+    else => print("None of the above"),
+    # Commas at the end of everything - improves readability 
+}
+
+
+
 # Going to use else for default case
 # Want to support is_str, is_num or just `is` in general
 # Use `match` instead of when and allow proper pattern matching - maybe start it off as a basic switch case thing
-    # Determine the `->` syntax maybe this is best or `:` ?
+    # Determine the `->` syntax maybe this is best or `:` ? -- probably going to use => because its similar to Lambdas so we are reusing that symbol
 
 
 
