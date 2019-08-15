@@ -349,10 +349,36 @@ type code = enum {
     ADD,
     SUB,
     OR,
-}
+} # TODO Look into enums and all of this more
 
 val do_add = code.ADD
 
-match code {
-ADD => println("this is an add"),
+match do_add {
+code.ADD => println("this is an add"),
 } # Compiler error, SUB and OR arent handled (could use an else to cover everything else)
+# need to figure out how the accessing of enums will be (whether its like a constant or not)
+
+
+# need to write examples of go code and b code side by side to see what things make sense
+# need to remove elif in favor of just using else if or match
+
+val new_list = [x for x in 1..40]
+# new_list now contains a list[int] from 1 to 40 inclusive
+
+
+val new_set = (x for x in 1..40)
+# new_set now contains a set[int] from 1 to 40 inclusive
+val new_set2 = (x for x in 1..100 if x % 2 == 0)
+# new_set2 contains a set[int] of even number from 1 to 100 inclusive
+
+# maps and objects are kind of the same?
+val new_map = {x: y for x, y in {name: "brice", "some age": 23, 4: [1,2,3]}}
+# new_map contains a map[str|int]str|int|list[int]
+# need to figure out how to do typing to be like this, union types would be interesting
+# look into how its done by crystal
+# maybe there should be a <> around union types like that to make it more clear?
+
+# maybe this wont be allowed but this is kinda what makes a nice dynamic lang
+
+
+
