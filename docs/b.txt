@@ -268,3 +268,91 @@ match x {
 
 ###
 # I just want a good scripting language for me that compiles to native code on many platforms 
+
+# ################################################################################################################################
+# MORE NOTES
+# Just going to continue to write notes and docs as things go along and we start to settle on something
+
+
+pub fun hello(val somevar: int) str { # To use argument as Immutable var
+    "#{somevar}" # Return string interpolated with the variable name
+}
+
+
+# Creating your own type
+type mytype = obj{  # This is when you use the type names (if values are given they are used as default and to find out type)
+    x: str,
+    y: int,
+    age: int,
+    someother: obj{
+        yy: int,
+    },
+}
+
+val abc = mytype{
+    x: "Yes",
+    y: "Another",
+    age: 124,
+    someother: {
+        yy: 23,
+    },
+}
+
+# one way to do a constructor is to return a newobj with all its fields filled out like above
+fun newMyType() mytype {
+    # To use dot syntax to fill up all the fields we must instantiate a blank version which defaults all fields
+    # to their zero value, unless there are defaults in which case those are still used
+    var testitem = mytype{}
+    testitem.x = "Instatiate"
+    testitem.y = "Anothervar"
+    testitem.age = 24
+    testitem.someother.yy = 92929
+    return testitem
+}
+
+# Exact example as above but now showing named return values
+fun newMyType() (test_item mytype) { # syntax being (named_item_returning Type)
+    # using named return forces the value to be instantiated with its initial default value or default zero value depending
+    test_item.x = "Instatiate"
+    # test_item.y will have "" as its value
+    test_item.age = 24
+    test_item.someother.yy = 92929
+    # in go there would be a return here but returns are implicit in b
+}
+
+# If default values are given in function arguments then that is the assumed type
+# Need to figure out how were gonna handle this
+
+fun(x int, y int) int { return x + y }(1,2) # Call a function inline
+fun(x, y int) int { return x + y }(3,4) # Call a function inline
+# Figure out which one of these looks and makes sense - probably the go way
+
+# Maybe make an `any` type that just represents an interface{}
+
+
+type MyNewTyper = any {
+    somethingfun() str,
+    anotherfun() int,
+}
+# any types can only take function signatures as values
+# empty any allows any type to be used
+fun myfun(something any) str {
+    match something {
+    "aaa" => return "this is just some aaa's",
+    {name: "brice", age: 23} => return "\"#{=name}, #{=age}\"",
+    else => return "Nothing matches!"
+    } # need an else unless the match is exhaustive
+}
+
+# match works exhaustively on enums only pretty much
+type code = enum {
+    ADD,
+    SUB,
+    OR,
+}
+
+val do_add = code.ADD
+
+match code {
+ADD => println("this is an add"),
+} # Compiler error, SUB and OR arent handled (could use an else to cover everything else)
