@@ -378,7 +378,18 @@ val new_map = {x: y for x, y in {name: "brice", "some age": 23, 4: [1,2,3]}}
 # look into how its done by crystal
 # maybe there should be a <> around union types like that to make it more clear?
 
+# with the <> it looks like this map[<str|int>]<str|int|list[int]>
+# which i think is decent but there is also type alias' for those inside the <>
+
 # maybe this wont be allowed but this is kinda what makes a nice dynamic lang
 
+# figure out if we are gonna have mutable and immuatable and if so iron out all the areas where this matters
 
+# add way to just put go code in here or make a way to access it nicely
 
+# Anon function
+val my_anon_func = fun(name str) {
+    return "Hey there, #{name}!"
+}
+my_anon_func("brice")
+# `Hey there, brice!`
