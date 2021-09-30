@@ -7,8 +7,8 @@ Feel free to look around!
 
 ---
 
-- [Resume (PDF)](https://brice-v.github.io/docs/BriceVadnaisResume.pdf)
 - [Projects](https://brice-v.github.io/projects)
+- Fair warning, a lot of these links do not really have any information and since i havent created docs in ~3+yrs then I dont think they ever will :P
 - Assembly (custom)
   - [My Instruction Set Simulator Documentation](https://brice-v.github.io/Instruction_Set)
 - VHDL
@@ -18,7 +18,7 @@ Feel free to look around!
   - [Microprocessor Virtual Machine/Instruction Set Simulator](https://github.com/brice-v/InstructionSetSimulator-VM)
   - [Microprocessor Assembler](https://github.com/brice-v/Assembler)
 - Go
-  - [Tokenizer/Lexer](https://github.com/brice-v/b) (part of a larger goal to make a language)
+  - [Programming Language](https://github.com/brice-v/b)
   - [Piece Table](https://github.com/brice-v/peace) (part of a larger goal to make a text editor)
   - [Text Pager/Editor](https://github.com/brice-v/btex-go) (early stages of a text editor)
 
@@ -42,7 +42,10 @@ I'm a big fan of podcasts as well and reguarly listen to Gotime, Talk Python to 
 
 There has been a lot of cool and exciting languages that have come up within the past couple years.  Briefly I will go through some of the ones that excite me the most (I will definitely need to go into these more at some point).
 Go, Nim, Rust, Crystal, and Zig are all languages that I have invested some or a lot of my time learning.
-TODO: Add more here...
+
+Nowadays a lot of coding I do is in private repositories and mostly to just play around with different ideas and technology.  I built a redis clone with a subset of functionality, a hackernews and lobsters cli program that rendered to the terminal with clickable links, and more! The programming language I built was decently useful but still needed lots of work so I gradually moved on from that. Sometimes all I build is a scraper to get information from countless websites.
+
+Time seems to be the hardest thing to get a hold of and I've been working on doing as much as I can outside as well.
 
 ## Achievements
 
@@ -61,6 +64,7 @@ TODO: Add more here...
 
 ### Things I Use
 
+- [intellij](https://www.jetbrains.com/idea/) for java at work but i've grown to like it quite alot
 - [vscode](https://code.visualstudio.com/) for bigger projects
 - [sublime text](https://www.sublimetext.com/) for quick edits
 - [firefox](https://www.mozilla.org/en-US/firefox/new/)
@@ -69,6 +73,13 @@ TODO: Add more here...
   - [https everywhere](https://www.eff.org/https-everywhere)
 - [ubuntu](https://ubuntu.com/)
 - [proton vpn](https://protonvpn.com/)
-- thinkpad x230
-- samsung galaxy s8
-- custom built desktop (old now) fx6300, 8GB, r7 260x
+- thinkpad x230 (this is the one that got me through college but I had another that died and I just swapped drives to keep my data!)
+  - mainly using elementaryos but windows is installed and dual boot is set up
+    - popos is probably the distro i'd go with now besided ubuntu but both are not as lightweight
+  - Also picked up an old macbook pro that still has phillips head screws on the bottom!
+    - this means I can upgrade so SSD in there and no disk drive because it was making noises and i dont need it
+- samsung galaxy s8 - havent changed
+- ~~custom built desktop (old now) fx6300, 8GB, r7 260x~~
+- FINALLY a new computer: Ryzen 5 3600, 32GB, RX 5700XT
+  - havent had any issues but my mouse that is ~20yrs old is definitely going
+  - I have quite a few hard drives too because i'm a bit of a data hoarder
