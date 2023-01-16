@@ -33,8 +33,7 @@ I'm very interested in microprocessor architecture and decided for my capstone i
 I also like to code! ([See the sectiong below for more info](#Coding))  I love learning about new languages and what they have to offer.  Over the past year and a half i've tried a number of new and exciting languages. Python is the language I immediately go for if I need to quickly script something together but using some of the more exciting features such as type hinting has been nice.
 
 Then of course is watching videos, reading books, and playing video games.
-Recently I read _Artemis_ by Andy Weir and _Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future_ by Ashlee Vance.
-I Highly recommend both to anyone interested.  Video game wise I recently picked up _Outer Worlds_ which has been a blast so far.
+I Highly recommend both to anyone interested.  Video game wise I recently finished up _Elden Ring_ which was a blast.
 
 I'm a big fan of podcasts as well and reguarly listen to Gotime, Talk Python to me, and a lot of others but it's always nice to be up to date on the ecosystem of a language.
 
@@ -43,7 +42,7 @@ I'm a big fan of podcasts as well and reguarly listen to Gotime, Talk Python to 
 There has been a lot of cool and exciting languages that have come up within the past couple years.  Briefly I will go through some of the ones that excite me the most (I will definitely need to go into these more at some point).
 Go, Nim, Rust, Crystal, and Zig are all languages that I have invested some or a lot of my time learning.
 
-Nowadays a lot of coding I do is in private repositories and mostly to just play around with different ideas and technology.  I built a redis clone with a subset of functionality, a hackernews and lobsters cli program that rendered to the terminal with clickable links, and more! The programming language I built was decently useful but still needed lots of work so I gradually moved on from that. Sometimes all I build is a scraper to get information from countless websites.
+Nowadays a lot of coding I do is in private repositories and mostly to just play around with different ideas and technology.  I built a [redis clone](https://github.com/brice-v/rdc) with a subset of functionality, a hackernews and lobsters cli program that rendered to the terminal with clickable links, and more! The [programming language](https://github.com/brice-v/blue) I built was decently useful and I've been working on it on and off for the past 3 years. Sometimes all I build is a scraper to get information from countless websites.
 
 Time seems to be the hardest thing to get a hold of and I've been working on doing as much as I can outside as well.
 
@@ -72,14 +71,14 @@ Time seems to be the hardest thing to get a hold of and I've been working on doi
   - [privacy badger](https://www.eff.org/privacybadger)
   - [https everywhere](https://www.eff.org/https-everywhere)
 - [ubuntu](https://ubuntu.com/)
+  - [mint](https://linuxmint.com/)
 - [proton vpn](https://protonvpn.com/)
 - thinkpad x230 (this is the one that got me through college but I had another that died and I just swapped drives to keep my data!)
-  - mainly using elementaryos but windows is installed and dual boot is set up
-    - popos is probably the distro i'd go with now besided ubuntu but both are not as lightweight
+  - mainly using mint now, I used to use elementaryos with a dual boot windows install
   - Also picked up an old macbook pro that still has phillips head screws on the bottom!
     - this means I can upgrade so SSD in there and no disk drive because it was making noises and i dont need it
-- samsung galaxy s8 - havent changed
+- ~~samsung galaxy s8 - havent changed~~ Now using a samsung note 9
 - ~~custom built desktop (old now) fx6300, 8GB, r7 260x~~
 - FINALLY a new computer: Ryzen 5 3600, 32GB, RX 5700XT
-  - havent had any issues but my mouse that is ~20yrs old is definitely going
+  - havent had any issues but my mouse that is ~20yrs old is definitely going (Update: It died)
   - I have quite a few hard drives too because i'm a bit of a data hoarder
