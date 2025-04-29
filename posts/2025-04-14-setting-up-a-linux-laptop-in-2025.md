@@ -20,7 +20,7 @@ After using it for the past 2 years, I think generally it was fine. Windows 11 p
 
 ## Choice Paralysis
 
-When deciding on a Linux Distro there are many _many_ choices. I've used a fair amount of popular ones and tried out other smaller ones, but I wanted mostly a system that would "just work" and ideally work for all the hardware I had on this laptop. The biggest glaring thing to me was touch screen and that I really needed Fractional Scaling. We've come a long way since 2014 so I was optimisitc
+When deciding on a Linux Distro there are many _many_ choices. I've used a fair amount of popular ones and tried out other smaller ones, but I wanted mostly a system that would "just work" and ideally work for all the hardware I had on this laptop. The biggest glaring thing to me was touch screen and that I really needed Fractional Scaling. We've come a long way since 2014 so I was optimistic
 
 The choices I went through were as follows:
 * [Ubuntu](https://ubuntu.com/) (24.04)
@@ -32,7 +32,7 @@ The choices I went through were as follows:
 * [Zorin OS](https://zorin.com/os/)  (17.3)
 * [Cachy OS](https://cachyos.org/) (Latest)
 
-I mostly stuck with LTS releases and in general something Deriving from Debian/Ubuntu so I could stick with apt which I am most familiary with at this point. I stuck Manjaro in there because I've had luck in the past with it working on newer hardware and in general it was easy enough to use. CachyOS was just something I saw on Distrowatch so I decided to try it out as well.
+I mostly stuck with LTS releases and in general something Deriving from Debian/Ubuntu so I could stick with apt which I am most familiar with at this point. I stuck Manjaro in there because I've had luck in the past with it working on newer hardware and in general it was easy enough to use. CachyOS was just something I saw on Distrowatch so I decided to try it out as well.
 
 ## The Initial Impressions
 
@@ -49,7 +49,7 @@ Using a Live USB here are my initial impressions of all the above and if I thoug
 	* Failed out of the gate to get it to boot to Live USB
 		* Tried with and without Secure boot but no luck
 		* Verified the checksum and everything but no dice there either
-			* I was using ventoy but this was the only distro with the issue so maybe it wasnt meant to be
+			* I was using ventoy but this was the only distro with the issue so maybe it wasn't meant to be
 * Pop!\_OS
 	* Another failure to boot ot Live USB
 		* I had other Ubuntu distos to try out so I wasn't too bummed
@@ -68,7 +68,7 @@ Using a Live USB here are my initial impressions of all the above and if I thoug
 	* Pretty nice behavior
 	* Everything worked
 		* Touchscreen behavior was exactly as I hoped
-	* Hey Look they also have ZFS support (although it doesnt say experimental strangely, Ill still consider it so)
+	* Hey Look they also have ZFS support (although it doesn't say experimental strangely, Ill still consider it so)
 	* This looks to be a solid contender and I've never used it before (but heard lots about it over the years)
 * Cachy OS
 	* This worked out of the box
@@ -88,7 +88,7 @@ I'm used to setting up my laptop in a very particular way and the requirement of
 
 Shutting the screen on my laptop should mean don't use any power until I wake you back up. That is not really the case nowadays and I've heard plenty of horror stories as well as experiencing my own. I don't want my laptop to be 100 degrees if I pull it out of my backpack. I dont need updates happening because my screen is closed. If I shut the lid tonight, tomorrow when I wake up I should be able to open my laptop and see it at the same % it was at the day before. This is not the case. It wasn't the case for me on windows and so I decided to just hibernate on lid close.
 
-I would think that hibernate is fairly straighforward but that was my mistake. It turns out this is not really natively supported, at least not on Zorin or Ubunutu and possibly many other distros but I _need_ this feature to work. A laptop that loses +/-30% overnight is not worth it to me. In my mind, if I'm not using it, it should be just how I left it.
+I would think that hibernate is fairly straightforward but that was my mistake. It turns out this is not really natively supported, at least not on Zorin or Ubuntu and possibly many other distros but I _need_ this feature to work. A laptop that loses +/-30% overnight is not worth it to me. In my mind, if I'm not using it, it should be just how I left it.
 
 There was countless troubleshooting steps I went through, blog posts, forum posts, all to see if I can just get this up and running easily.
 
@@ -107,7 +107,7 @@ Here were my mistakes:
 
 How I resolved it:
 
-Eventually, I read a zorin forum post, that led me to an askubuntu page which was precisely what I was trying to accomplish. FDE setup with an encypted root install. For reference: [the steps I followed](https://askubuntu.com/questions/1441208/encrypted-partitions-luks-with-login-password-hibernate). Sadly I can't find that original Zorin forum thread that led me there but shoutout to that person who helped me on my way. The askubuntu thread above was exactly enough information for me (in addition to my prior attempts) that allowed me to get everything setup just as I hoped.
+Eventually, I read a zorin forum post, that led me to an askubuntu page which was precisely what I was trying to accomplish. FDE setup with an encrypted root install. For reference: [the steps I followed](https://askubuntu.com/questions/1441208/encrypted-partitions-luks-with-login-password-hibernate). Sadly I can't find that original Zorin forum thread that led me there but shoutout to that person who helped me on my way. The askubuntu thread above was exactly enough information for me (in addition to my prior attempts) that allowed me to get everything setup just as I hoped.
 
 #### Another Problem Occurs
 
@@ -119,7 +119,7 @@ I doubt I'm out of the woods yet, but I'm super optimistic about the linux lapto
 
 (Side note but I ironically have hit another wayland text issue since this with IntelliJ and a steam crash/hang that I just solved by installing from flatpak lol)
 
-I really think if you are hestiating using linux on your laptop, you should'nt. With Windows 10 going [EOL](https://support.microsoft.com/en-us/windows/windows-10-supports-ends-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281) this year, I know I'll be attempting an upgrade of my desktop to be full on linux but thats a story for another time.
+I really think if you are hesitating using linux on your laptop, you shouldn't. With Windows 10 going [EOL](https://support.microsoft.com/en-us/windows/windows-10-supports-ends-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281) this year, I know I'll be attempting an upgrade of my desktop to be full on linux but that's a story for another time.
 
 
-Thanks for reading! (This is my first real blog post so if it rambles its mostly from stream of conciousness. I'll get things better setup in the future but felt like the first step of writing for a blog is just getting something out there. Feel free to send a PR on my [GH](https://github.com/brice-v/brice-v.github.io) if you notice any typos and I'll correct them and re-push)
+Thanks for reading! (This is my first real blog post so if it rambles its mostly from stream of consciousness. I'll get things better setup in the future but felt like the first step of writing for a blog is just getting something out there. Feel free to send a PR on my [GH](https://github.com/brice-v/brice-v.github.io) if you notice any typos and I'll correct them and re-push)
