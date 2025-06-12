@@ -5,7 +5,7 @@ Feel free to look around!
 
 This has already gotten _very_ old! Checkout my first blog post [here](https://brice-v.github.io/posts/2025-04-14-setting-up-a-linux-laptop-in-2025)!
 
-Update: Another new blog post [here](https://brice-v.github.io/posts/2025-04-28-setting-up-a-minecraft-server)! (I will fix the blog at some point...)
+Update: Another new blog post [here](https://brice-v.github.io/posts/2025-04-28-setting-up-a-minecraft-server)! (~~I will fix the blog at some point...~~ Now Fixed! But on a different URL, see above)
 
 ## Stuff
 
