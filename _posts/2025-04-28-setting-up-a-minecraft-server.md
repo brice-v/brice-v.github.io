@@ -2,7 +2,6 @@
 layout: post
 title: "Setting up a Minecraft Server in 2025 was Surprisingly Easy"
 date: 2025-04-28
-categories: minecraft server
 ---
 
 ## Some History
