@@ -13,6 +13,15 @@
           <h1><a href="https://bricev.xyz">Brice Vadnais</a></h1>
           <p>{{ site.description | default: "A small website" }}</p>
         </div>
+        <div>
+          {% for post in site.posts %}
+            <article>
+              <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+              <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+              <p>{{ post.excerpt | default: post.content | truncatewords: 50 }}</p>
+            </article>
+          {% endfor %}
+        </div>
         {{ content }}
       </section>
     </div>
