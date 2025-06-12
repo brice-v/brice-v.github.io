@@ -1,10 +1,3 @@
----
-layout: post
-title: "Setting up a Linux Laptop in 2025"
-date: 2025-04-14
-categories: linux laptop
----
-
 # Setting up a Linux Laptop in 2025
 
 ## The History
