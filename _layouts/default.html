@@ -14,14 +14,16 @@
           <p>{{ site.description | default: "A small website" }}</p>
         </div>
         <div>
-          {% for post in site.posts %}
-            <article>
-              <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-              <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
-              <p>{{ post.excerpt | default: post.content | truncatewords: 50 }}</p>
-            </article>
+        <h2>Manual Posts Listing (from /posts directory)</h2>
+        <ul>
+          {% assign post_files = site.static_files | where_exp: "file", "file.path contains '/posts/' and file.extname == '.md'" %}
+          {% for file in post_files %}
+            <li>
+              <a href="{{ file.path | relative_url }}">{{ file.name }}</a>
+            </li>
           {% endfor %}
-        </div>
+        </ul>
+      </div>
         {{ content }}
       </section>
     </div>
