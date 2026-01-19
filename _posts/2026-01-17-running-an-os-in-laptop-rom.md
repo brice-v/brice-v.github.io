@@ -1,5 +1,3 @@
-WIP
-
 # Running an OS in the BIOS
 
 Recently I saw a video about flashing [coreboot](https://www.coreboot.org/) onto a Thinkpad without requiring any custom rom flasher.
@@ -43,7 +41,6 @@ It is awesome to see how quick a computer can boot when you strip its bios down 
 
 But the cool part was now that I had cracked open what was possible I could get to a fun idea I had. Running a full OS in the bios of my computer.
 
-
 ### KolibriOS
 
 [KolibriOS](https://www.kolibrios.org/en/download) is an extremely small os which is what I was looking for. In the top rom of the X230, I have 4MB to play around with and I still wanted to keep my functioning [SeaBIOS](https://www.seabios.org/) to GRUB payload setup so that I can still boot into linux.
@@ -57,17 +54,60 @@ But its important to note, in the way that I was going to be running this, I did
 
 ## Creating a new Skulls/Coreboot Image
 
+In order to create a skulls image with a custom kolibrios image within it I had to first build the coreboot payload, inject the os image, and then cut it off to 4MB to ensure that it would fit in the top rom of my x230. The top rom is the only part that is flashable so I needed to make sure that even after cutting the coreboot image down, it would still fit the os inside of it.
 
+These are the steps I did:
+1. Install any prerequisites or install them as the error out, I used arch on my x230 so latest versions were typically available
+2. `git clone https://github.com/merge/skulls.git && cd skulls`
+3. `git checkout 1.1.3` (use whatever the latest release is)
+4. `cd x230` (use the Laptop Model that is supported)
+5. `./build.sh -c nonfree-defconfig-4931b978d9` (file may change based on version)
+	- This can take some time as its building coreboot
+6. `cd build`
+7. `./build/cbfstool build/coreboot.rom print`
+	- This is just to make sure that everything's working
+8. `curl https://builds.kolibrios.org/en_US/latest-img.7z -o latest-img.7z && 7z e latest-img.7z`
+9. `./build/cbfstool build/coreboot.rom add -f kolibri.img -c lzma -n floppyimg/Kolibri.lzma -t raw`
+	- This adds the kolibri image to the coreboot image
+10. `./build/cbfstool build/coreboot.rom print`
+	- Run this again to make sure its there, total up the sizes to make sure everything up to and including the floppyimg/Kolibri.lzma is less than 4MB
+	- Mine totaled out to about 2MB
+11. `dd if=build/coreboot.rom of=coreboot-kolibrios.rom bs=1M skip=8`
+	- There should now be a file in the same directory that is exactly 4.0M as reported by `ls -lh`
+12. `cp coreboot-kolibrios.rom ../.. && cd ../.. && sha256sum coreboot-kolibrios.rom > coreboot-kolibrios.rom.sha256`
+	- Copying the file to root of skulls dir and generating sha256sum for flashing verification
+13. In `/etc/default/grub` find the line `GRUB_CMDLINE_LINUX_DEFAULT="..."` and inside the quotes, append `iomem=relaxed` to the end
+	- run `sudo update-grub` or `sudo grub-mkconfig -o /boot/grub/grub.cfg`
+14. NOW TIME FOR FLASHING
+	- `sudo ./skulls.sh -b x230 -i coreboot-kolibrios.rom`
+	- When it asks to Flash the BIOS now, hit y then enter, then when it asks to poweroff hit y then enther
+	- Then power on!
 
 ## Gif of this Running
 
+![Kolibri in Coreboot](assets/coreboot-payload-screen.png)
+
+![Kolibri Booted](assets/kolibrios-screen.png)
 
 
 ## Back to Skulls
 
+To get back to regular skulls the process is much easier as you can just use the release of skulls and flash the regular image provided.
 
+1. Press Escape when booting up and then select your drive to get back into linux
+2. `wget https://github.com/merge/skulls/releases/download/1.1.3/skulls-1.1.3.tar.xz && tar -xvf skulls-1.1.3.tar.xz && cd skulls-1.1.3`
+3. `sudo ./skulls.sh -b x230`
+	- Select the nonfree bios for similar behavior
+	- Y to flash, then Y to shutdown
+4. On next boot you should not boot into kolibrios by default and GRUB should come up!
 
-- Include exact steps I ran to actually build and then create the image with kolibrios
-- redo this myself
-- take a screenshot or video into gif
-- mention steps to revert (include GRUB_CMDLINE_DEFAULT options)
+## What worked and didn't work with Kolibri in the BIOS
+
+The network drivers weren't installed so unfortunately no network connections but all the builtin applications for the most part should work.
+I did have a crash here and there which required me to reboot but nothing too crazy. The games worked, too which is always cool, who doesn't want to play dino in a ramdisk started from an OS hosted in the BIOS.
+
+I just think its awesome that I can essentially have an OS completely inside the BIOS section of my Laptop's ROM!
+
+Would I recommend this... Not really. If you want to play with OS's its easier to just do it in VMs or with qemu and its a lot easier to adjust as needed. I for instance could not figure out how to get my Drive to be 1st in the payload order but I didn't look too hard because I didn't think I would keep this as a permanent thing.
+
+That's all for this post, I hope you enjoyed reading!
