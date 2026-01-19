@@ -83,11 +83,11 @@ These are the steps I did:
 	- When it asks to Flash the BIOS now, hit y then enter, then when it asks to poweroff hit y then enther
 	- Then power on!
 
-## Gif of this Running
+## Screenshots
 
-![Kolibri in Coreboot](assets/coreboot-payload-screen.png)
+![Kolibri in Coreboot](https://blog.bricev.xyz/assets/coreboot-payload-screen.png)
 
-![Kolibri Booted](assets/kolibrios-screen.png)
+![Kolibri Booted](https://blog.bricev.xyz/assets/kolibrios-screen.png)
 
 
 ## Back to Skulls
