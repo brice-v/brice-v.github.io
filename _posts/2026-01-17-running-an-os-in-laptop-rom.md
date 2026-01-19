@@ -85,9 +85,9 @@ These are the steps I did:
 
 ## Screenshots
 
-![Kolibri in Coreboot](https://blog.bricev.xyz/assets/coreboot-payload-screen.png)
+![Kolibri in Coreboot](https://blog.bricev.xyz/assets/coreboot-payload-screen.jpg)
 
-![Kolibri Booted](https://blog.bricev.xyz/assets/kolibrios-screen.png)
+![Kolibri Booted](https://blog.bricev.xyz/assets/kolibrios-screen.jpg)
 
 
 ## Back to Skulls
